@@ -9,13 +9,14 @@ $(document).ready(function() {
     if (totalSize != 180) {                               // Not a triangle
       alert('This is not a triangle');
     }
-//    } else if {   // Equiliateral is all three equal
-//      number1 === number2 && number3;
-//    } else if {   // Isosceles is two equal sides
-//
-//    } else {      // scalene has no equal sides
-//
-    
+    else if(number1 === number2 === number3) {             // Equiliateral is all three equal
+      console.log("Equilateral")
+    }
+    else if(number1 === number2 || number1 === number3) {             // Isosceles is two equal sides
+      console.log("Isosceles")
+    } else {                                              // Scalene has no equal sides
+      console.log("Scalene")
+    }
     event.preventDefault();
   });
 });
